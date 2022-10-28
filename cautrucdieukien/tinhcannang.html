@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="a"></p>
+    <input type="number" id="weight">Nhập cân nặng
+    <input type="number" id="height">Nhập chiều cao
+    <button onclick="ketqua()">Tính BMI</button>
+</body>
+
+<script>
+    function ketqua() {
+        let chieucao = Number(document.getElementById("height").value);
+    let cannang = Number(document.getElementById("weight").value);
+    let BMI = cannang / (chieucao * chieucao)
+    let check = ""
+        if (BMI < 18)
+            check = "Ốm";
+        else if (BMI < 25)
+            check = "Normal";
+        else if (BMI < 30)
+            check = "quá cân";
+        else
+            check = "béo phì";
+        document.getElementById("a").innerHTML = "Chỉ số BMI của bạn là :" + BMI + ".Bạn bị:" + check
+    }
+</script>
+
+</body>
+
+</html>

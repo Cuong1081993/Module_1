@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="numberA"> Nhập số a
+    <input type="number" id="numberB"> Nhập số b
+    <input type="number" id="numberC"> Nhập số c
+    <button onclick="insertNum()">Kết quả</button>;
+    <script>
+        function insertNum() {
+            let a = Number(document.getElementById('numberA').value);
+            let b = Number(document.getElementById('numberB').value);
+            let c = Number(document.getElementById('numberC').value);
+            if (a == 0 && b == 0 && c == 0) {
+                return alert('Phương trình vô số nghiệm');
+            } else if (a == 0 && b == 0) {
+                return alert('Phương trình không xác định');
+            } else if (a == 0 & b != 0) {
+                return alert('Phương trình có 1 nghiệm' + (-c) / b);
+            }
+            result(a, b, c);
+        }
+        function result(a, b, c) {
+            let x = (b * b) - (4 * a * (c));
+            if (x < 0) {
+                return alert('Phương trình vô nghiệm');
+            } else if (x == 0) {
+                x1 = x2 = -b / 2 * a
+                return alert('Phương trình có 2 nghiệm giống nhau:' + x1 + "'" + x2);
+            } else {
+                let x1 = ((-b) + Math.sqrt(x)) / (2 * a);
+                let x2 = ((-b) - Math.sqrt(x)) / (2 * a);
+                return alert('Phương trình có 2 nghiệm phân biệt:' + x1 + "và" + x2);
+            }
+
+        }
+    </script>
+</body>
+
+</html>

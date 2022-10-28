@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="text" id="add">
+    <button onclick="ngu()">Dịch</button>
+    <p id="result">Kết quả</p>
+</head>
+
+<body>
+    <script>
+
+        function ngu() {
+            let english = ["orange", "apple", "banana", "mango", "hello"]
+            let vietnamese = ["cam", "táo", "chuối", "xoài", "xin chào"]
+            let result = ''
+            let string = document.getElementById('add').value;
+            let index_eng = -1;
+            for (i = 0; i < english.length; i++) {
+                if (string == english[i]) {
+                    index_eng = i
+                }
+                for (j = 0; j < vietnamese.length; j++) {
+                    if (index_eng == j) {
+                        result = vietnamese[j]
+                    }
+                }
+
+            }
+            if (index_eng == -1) {
+                result = "không có"
+            }
+
+            document.getElementById('result').innerHTML = result;
+        }
+
+
+
+    </script>
+</body>
+
+</html>

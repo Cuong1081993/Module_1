@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="case.css">
+</head>
+
+<body>
+    <div class="banner">
+        <img src="banner_lienthongdaihoc.png" alt="">
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <h2 class="heading">Danh sách sinh viên khóa K45</h2>
+            <button class="btn btn-primary" onclick="open_insert()">
+                <i class="fa-solid fa-person-circle-plus"></i>
+                Add</button>
+        </div>
+        <div class="search">
+            <input type="text"  id="search"  oninput="search()" placeholder="Tìm kiếm">
+                <i class="fa-solid fa-search"></i>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Năm sinh</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Ngành học</th>
+                        <th>Ảnh</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="insert_add">
+        <div class="insert">
+            <div class="insert_heading">
+                <div class="insert_title">Thêm danh sách sinh viên</div>
+                <div class="insert_close" onclick="close_insert()">&times;</div>
+            </div>
+            <div class="insert_body">
+                <div class="create_contact">
+                    <div class="contact_info">
+                        <div class="form">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" class="form_insert" id="name">
+                            <input type="hidden" value="0" id="contactId">
+                        </div>
+                        <div class="form">
+                            <label for="dob">Năm sinh</label>
+                            <input type="text" class="form_insert" id="dob">
+                        </div>
+                        <div class="form">
+                            <label for="email">Email</label>
+                            <input type="text" class="form_insert" id="email">
+                        </div>
+                        <div class="form">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" class="form_insert" id="phone">
+                        </div>
+                        <div class="form">
+                            <label for="address">Địa chỉ</label>
+                            <input type="text" class="form_insert" id="address">
+                        </div>
+                        <div class="form">
+                            <label for="major">Ngành học</label>
+                            <input type="text" class="form_insert" id="major">
+                        </div>
+                        <div class="form">
+                            <label for="avatar">Ảnh</label>
+                            <input type="url" class="form_insert" id="avatar" onchange="changeAva()">
+                        </div>
+                        <div class="form">
+                            <label for="email"></label>
+                            <button id="btnAdd" class="btn btn_add mr" onclick="add_insert()">Thêm</button>
+                            <button id="btnSave" class="btn btn_save mr d-none" onclick="save_insert()">Lưu</button>
+                            <button class="btn btn_close" onclick="close_insert()">Hủy</button>
+                        </div>
+                    </div>
+                    <div class="avatar_preview">
+                        <img class="avatar_insert" src="no.jfif">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="case.js"></script>
+</body>
+
+</html>

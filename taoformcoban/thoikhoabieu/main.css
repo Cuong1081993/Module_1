@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse:initial;
+    padding: 50px;
+}
+.hover{
+    background-color: red;
+}
+th {
+    text-align: center;
+    font-weight: 1000;
+    padding:20px 20px 20px 20px;
+    width: 200;
+    border-style:groove;
+}
+td {
+    font-size: 15;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:20px 20px 20px 20px;
+    width: 100;
+}

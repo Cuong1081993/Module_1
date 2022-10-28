@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = 11111;//Number(prompt("Nhập vào 1 số :"));
+        let list = [0, 111  ,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 19, 22, 115, 122, 111];
+        function findNumber() {
+            for (let i = 0; i < list.length; i++) {
+                if (number == list[i]) {
+                    return alert(`Số cần tìm nằm tại vị trí ${i}`);
+                }
+            }
+            return alert ('Không tìm thấy số cần tìm ');
+        }
+        findNumber(number, list)
+    </script>
+</body>
+
+</html>

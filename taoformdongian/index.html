@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+    <table border="5"> 
+        <tr>
+            <td>
+    <form method="POST" action="/action_page.php">
+        <table>
+            <tr>
+                <td colspan="6"style="background-color: orange; color:white; text-align:center">SỞ THÍCH CỦA BẠN</td>
+            </tr>
+            <tr>
+                <th colspan="5" style="padding-left: 18px; ;"> Họ và tên <input type="text" name="yourname">
+            </tr>
+            <tr>
+                <th colspan="5" style="padding-left: 40px;"> Email <input type="email" name="email">
+            </tr>
+            <tr>
+                <th colspan="3" style="padding-left:  20px;"">Sở thích</th>
+                <td><input type="checkbox" name="hobby" value="thethao">Thể thao</td>
+                <td><input type="checkbox" name="hobby" value="amnhac">Âm nhạc</td>
+                <td><input type="checkbox" name="hobby" value="docsach">Đọc sách</td>
+            </tr>
+            <tr>
+                <th colspan="3"></th>
+                <td><input type="checkbox" name="hobby" value="luotweb">Lướt web</td>
+                <td><input type="checkbox" name="hobby" value="choigame">Chơi game</td>
+                <td><input type="checkbox" name="hobby" value="dienanh">Điện ảnh</td>
+            </tr>
+            <tr>
+                <th colspan="3"></th>
+                <td><input type="checkbox" name="hobby" value="dulich">Du lịch</td>
+            </tr>
+            <tr>
+            <td colspan="5"><input type="submit" name="Sumbit form" value="Gửi thông tin"></td>
+            <td><input type="reset" name="Reset form" value="Nhập lại"></td>
+        </tr>    
+        </table>     
+    </form>
+</td>
+</tr>
+</table>
+</body>
+</html>

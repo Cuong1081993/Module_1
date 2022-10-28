@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form action="action_page/php" method="POST">
+         <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+         <tr>
+            <td>Họ và tên</td>
+            <td><input type="name" name="full name"></td>
+         </tr>
+         <tr>   
+            <td>Ngày sinh</td>
+            <td> <input type="date" name="dob"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><input type="checkbox" name="gender" value="Male">Nam <input type="checkbox" name="gender" value="Female">Nữ</td>
+        </tr>
+        <tr>
+            <td  style="padding-bottom:150px;">Địa chỉ</td>
+            <td><textarea name="address" id="diachi" cols="30" rows="10"></textarea></td>
+            </tr>
+         <tr>
+            <td><label for="class">Lớp</label>
+                <td><select>
+                <option value="chonlop">---Chọn lớp---</option>
+            </select>
+            </td>
+        </td>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="mail"></td>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <td><input type="tel" name="tel number"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="register" value="Đăng ký"></td>
+            <td><input type="reset" name="recover" value="Nhập lại"></td>
+        </tr>
+         </tr>   
+        </form>
+
+    </table>
+</body>
+</html>

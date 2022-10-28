@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arrayNew = ["a", "o", "e", "u", "i"];
+        function checkArray(array) {
+            let count = 0;
+            for (let i = 0; i < array.length; i++) {
+                for (let j = 0; j < arrayNew.length; j++) {
+                    if (array[i].toLowerCase() == arrayNew[j]) {
+                        count++;
+                    };
+                };
+            };
+
+            if (count != 0) {
+                return count;
+            }
+            else {
+                return false;
+            };
+        };
+        
+        let array = "nhập 1 chuỗi ký tự".split("");
+        alert(`Chuỗi [${array}] có ${checkArray(array)} ký tự âm của mảng [${arrayNew}]`);
+    </script>
+</body>
+
+</html>

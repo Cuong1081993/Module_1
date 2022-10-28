@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" id="input1" placeholder="Nhập số 1">
+    <input type="number" id="input2" placeholder="Nhập số 2">
+    <button onclick="Add()">Cộng</button>
+    <button onclick="minus()">Trừ</button>
+<script>
+    function Add(){
+         so1 = Number(document.getElementById("input1").value);
+         so2 = Number(document.getElementById("input2").value);
+        document.getElementById('a').innerHTML= "KẾt quả là :" + (so1 + so2);
+    }
+    function minus(){
+        so1 = Number(document.getElementById("input1").value);
+        so2 = Number(document.getElementById("input2").value);
+        document.getElementById('a').innerHTML= "KẾt quả là :" + (so1 - so2);
+    } 
+
+</script>
+<p id="a"></p>
+
+</body>
+</html>
